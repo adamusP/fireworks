@@ -4,6 +4,21 @@ This is my implementation of simulation of fireworks, using a 3D particle system
 Individual particles obey the laws of physics (gravity and resistance), but don't interact with each other.
 The entire 3D scene is rendered using the OpenGL library and Silk.NET library.
 
+## Run
+
+Install the .NET 8 SDK (or a newer SDK with the .NET 8 runtime) and use a machine with OpenGL support.
+From this repository's root, run:
+
+```sh
+dotnet run --project 08-Fireworks.csproj
+```
+
+Press **F** to launch a rocket, **Space** to toggle automatic launching, and **Escape** to quit.
+Use the mouse to rotate the view and zoom.
+
+The shared rendering utilities are included in `Silk/`, so no sibling coursework projects are required.
+This project originated in the NPGR003 coursework repository; the original MIT license is included in `LICENSE`.
+
 ## Simulation
 The simulation is advanced once per frame from OnRender() by calling Simulation.SimulateTo(nowSeconds), where nowSeconds is current time in seconds.
 
@@ -90,4 +105,4 @@ I can also use the mouse to turn around and zoom in/out of the simulation.
 We can also see that rockets leave traces, and some can exlode into sparkles, sometimes even twice, while others don't explode at all.
 In the bottom we can see the launchers.
 
-![fireworks](./recording.mp4)
+[Watch the fireworks recording](./recording.mp4)

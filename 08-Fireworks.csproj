@@ -15,12 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\Silk3D\shared\BufferObject.cs" Link="Silk\BufferObject.cs" />
-    <Compile Include="..\Silk3D\shared\Shader.cs" Link="Silk\Shader.cs" />
-    <Compile Include="..\Silk3D\shared\Texture.cs" Link="Silk\Texture.cs" />
-    <Compile Include="..\Silk3D\shared\Trackball.cs" Link="Silk\Trackball.cs" />
-    <Compile Include="..\Silk3D\shared\Util.cs" Link="Silk\Util.cs" />
-    <Compile Include="..\Silk3D\shared\VertexArrayObject.cs" Link="Silk\VertexArrayObject.cs" />
+    <None Update="*.glsl" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
